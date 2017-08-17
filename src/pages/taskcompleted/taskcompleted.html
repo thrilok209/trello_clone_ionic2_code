@@ -1,0 +1,29 @@
+1<!--
+  Generated template for the Taskcompleted page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Task Completed</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let item of taskCompletedTodisplay | async">
+    <ion-card-header>
+      {{item.title}}
+    </ion-card-header>
+    <ion-card-content>
+    Title:{{item.sub}}<br>
+    Status:{{item.sat}}<br>
+    <!-- <button ion-button round (click)="whichToSub(item)">In Detail</button> -->
+    <ion-item>
+
+  </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

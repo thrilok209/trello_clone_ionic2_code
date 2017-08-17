@@ -1,0 +1,32 @@
+<!--
+  Generated template for the Loginpage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <p>{{ (af.auth | async)?.uid }}</p> -->
+  <ion-list>
+
+  <ion-item>
+   <ion-label floating>Username</ion-label>
+   <ion-input #user type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+   <ion-label floating>Password</ion-label>
+   <ion-input #pass type="password"></ion-input>
+  </ion-item>
+  </ion-list>
+  <button ion-button round (click)="loginA(user.value ,pass.value)">Login</button>
+  <!-- <button ion-button round (click)="loginG()">Login With Google</button> -->
+</ion-content>
